@@ -8,7 +8,7 @@ ps, pEs = np.load("ps.npz").values()
 
 model = get_model()
 
-model.load_state_dict(torch.load("models/emd-kr-toy-0.pt"))
+model.load_state_dict(torch.load("emd-kr-toy-0.pt"))
 
 plt.scatter(ps[:, 0], ps[:, 1], s=pEs * 1000, c="crimson")
 plt.scatter(qs[:, 0], qs[:, 1], s=qEs * 1000, c="royalblue")
